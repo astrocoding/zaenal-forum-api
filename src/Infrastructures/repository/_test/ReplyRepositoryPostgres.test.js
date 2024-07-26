@@ -54,7 +54,7 @@ describe('ReplyRepositoryPostgres', () => {
       expect(replies).toHaveLength(1);
       expect(replies[0].id).toEqual(replyId);
       expect(replies[0].thread_id).toEqual(threadId);
-      expect(replies[0].comment_id).toEqual('commendId');
+      expect(replies[0].comment_id).toEqual(commentId);
       expect(replies[0].owner).toEqual(owner);
     });
   });
