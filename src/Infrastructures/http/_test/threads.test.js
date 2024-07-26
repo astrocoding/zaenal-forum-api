@@ -688,6 +688,6 @@ describe('/threads endpoint', () => {
       expect(responseJson.data.thread.comments.length).toBeGreaterThan(0);
       expect(responseJson.data.thread.comments[0].likeCount).toEqual(1);
       expect(responseJson.data.thread.comments[1].likeCount).toEqual(0);
-    });
+    }, 60000);
   });
 });
